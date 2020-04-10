@@ -60,11 +60,11 @@ public class Solution {
 
         scanner.close();
 
-        if (N % 2 = 0) {
-            System.out.println("Not Weird");
+        if (N % 2 == 1) {
+            System.out.println("Weird");
         }
 
-        if (N % 2 != 0) {
+        if (N % 2 != 1) {
             System.out.println("Weird");
         }
     }
