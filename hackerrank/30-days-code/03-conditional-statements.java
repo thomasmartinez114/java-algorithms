@@ -62,10 +62,10 @@ public class Solution {
 
         if (N % 2 == 1) {
             System.out.println("Weird");
-        }
-
-        if (N % 2 != 1) {
+        } else if (N >= 6 && N <= 20) {
             System.out.println("Weird");
+        } else {
+            System.out.println("Not Weird");
         }
     }
 }
