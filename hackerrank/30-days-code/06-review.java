@@ -12,7 +12,7 @@ public class Solution {
          * class should be named Solution.
          */
         Scanner scanner = new Scanner(System.in);
-
         int T = Scanner.nextInt();
+        scanner.nextLine();
     }
 }
