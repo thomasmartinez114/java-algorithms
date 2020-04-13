@@ -81,7 +81,13 @@ public class Person {
     public void amIOld() {
         // Write code determining if this person's age is old and print the correct
         // statement:
-        System.out.println(/* Insert correct print statement here */);
+        if (this.age >= 18) {
+            System.out.println("You are old.");
+        } else if (this.age >= 13) {
+            System.out.println("You are a teenager.");
+        } else {
+            System.out.println("You are young.");
+        }
     }
 
     public void yearPasses() {
