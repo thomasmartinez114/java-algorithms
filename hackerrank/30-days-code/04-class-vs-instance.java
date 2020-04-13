@@ -92,6 +92,7 @@ public class Person {
 
     public void yearPasses() {
         // Increment this person's age.
+        this.age++;
     }
 
     public static void main(String[] args) {
