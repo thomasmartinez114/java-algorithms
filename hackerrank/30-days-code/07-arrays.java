@@ -27,6 +27,11 @@ public class Solution {
             int arrItem = Integer.parseInt(arrItems[i]);
             arr[i] = arrItem;
         }
+
+        for (int j = n - 1; j >= 0; j--) {
+            System.out.print(arr[j] + " ");
+        }
+        
         scanner.close();
     }
 
