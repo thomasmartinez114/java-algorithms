@@ -13,7 +13,7 @@ public class Solution {
     // Complete the breakingRecords function below.
     static int[] breakingRecords(int[] scores) {
         // inputs gamesPlayed
-        // scores in array
+        // scores in array.
 
         // return int array of times she broke her highest score and lowest
 
