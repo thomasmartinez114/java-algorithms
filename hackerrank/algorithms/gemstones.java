@@ -1,5 +1,8 @@
 // https://www.hackerrank.com/challenges/gem-stones/problem?h_r=internal-search&isFullScreen=false
 
+// Solve in pseudo code first
+// Look up how to use Set
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
