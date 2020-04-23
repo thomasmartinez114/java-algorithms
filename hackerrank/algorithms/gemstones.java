@@ -2,6 +2,7 @@
 
 // Solve in pseudo code first
 // Look up how to use Set
+// Then have Jethro or Milo interview me
 
 import java.io.*;
 import java.math.*;
