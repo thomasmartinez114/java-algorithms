@@ -24,7 +24,7 @@ public class Solution {
             }
             System.out.println(arr[rock]);
         }
-        return 5;
+        return 6;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
