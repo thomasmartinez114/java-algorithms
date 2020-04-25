@@ -1,7 +1,7 @@
 // https://www.hackerrank.com/challenges/gem-stones/problem?h_r=internal-search&isFullScreen=false
 
 // Solve in pseudo code first
-// Look up how to use Set
+// Look up how to use HashSet
 // Then have Jethro or Milo interview me
 
 import java.io.*;
@@ -16,15 +16,19 @@ public class Solution {
 
     // Complete the gemstones function below.
     static int gemstones(String[] arr) {
+        int gemstones = 0;
+
         for (int rock = 0; rock < arr.length; rock++) {
             // System.out.println(arr[i]);
             for (char mineral = 0; mineral < arr[rock].length(); mineral++){
-                // if (arr[rock][m])
-                System.out.println("Minerals in rock " + arr[rock].charAt(mineral));
+                // if (arr[rock][mineral])
+                // System.out.println("Minerals in rock " + arr[rock].charAt(mineral));
+                if (arr[rock].charAt(mineral) == arr[1].charAt(mineral))
+                    gemstones++;
             }
-            System.out.println(arr[rock]);
+            // System.out.println(arr[rock]);
         }
-        return 6;
+        return 5;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
