@@ -3,7 +3,7 @@
 //                          Input Types
 // In the example above, we used the nextLine() method, which is used to read Strings. To read other types, look at the table below:
 
-// Method	Description
+//   sMethod	                    Description
 // nextBoolean()	Reads a boolean value from the user
 // nextByte()	    Reads a byte value from the user
 // nextDouble()	    Reads a double value from the user
@@ -47,6 +47,8 @@ public class Solution {
         int b = scan.nextInt();
         int c = scan.nextInt();
 
-
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
     }
 }
