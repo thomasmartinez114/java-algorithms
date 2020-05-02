@@ -15,3 +15,25 @@
 // Our code will print:
 // myString is: Hi
 // myInt is 5
+
+//                          CHALLENGE
+
+// read 3 ints using stdin
+// print them out using stdout
+// each must be on new line
+
+import java.util.*;
+
+import sun.tools.java.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+        int c = scan.nextInt();
+
+        
+    }
+}
