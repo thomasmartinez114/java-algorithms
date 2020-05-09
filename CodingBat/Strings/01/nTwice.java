@@ -6,3 +6,6 @@
 // nTwice("Chocolate", 3) → "Choate"
 // nTwice("Chocolate", 1) → "Ce"
 
+public String nTwice(String str, int n) {
+  return str.substring(0, n).concat(str.substring(str.length() - n));
+}
