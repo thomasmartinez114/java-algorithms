@@ -26,7 +26,7 @@
 // Hi 5
 
 // Our code will print:d
-// myString is: Hi
+// myString is: Hi;
 // myInt is 5.
 
 //                          CHALLENGE
