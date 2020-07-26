@@ -56,9 +56,10 @@ public class Solution {
         Scanner scan = new Scanner(System.in);
 
         /* Declare second integer, double, and String variables. */
-        int i2 = 12;
-        double d2 = 4.0;
-        String s2 = "is the best place to learn and practice coding!";
+        int i2 = Integer.parseInt(scan.next());
+        double d2 = Double.parseDouble(scan.next());
+        scan.nextLine();
+        String s2 = scan.nextLine();
 
         /* Read and save an integer, double, and String to your variables.*/
         // Note: If you have trouble reading the entire String, please go back and review the Tutorial closely.
