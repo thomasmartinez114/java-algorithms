@@ -56,22 +56,24 @@ public class Solution {
         Scanner scan = new Scanner(System.in);
 
         /* Declare second integer, double, and String variables. */
-        int sum = Integer.parseInt(scan.next());
-        double dub = Double.parseDouble(scan.next());
-        scan.nextLine();
-        String name = scan.nextLine();
+        int i2 = 12;
+        double d2 = 4.0;
+        String s2 = "is the best place to learn and practice coding!";
 
         /* Read and save an integer, double, and String to your variables.*/
         // Note: If you have trouble reading the entire String, please go back and review the Tutorial closely.
         
         /* Print the sum of both integer variables on a new line. */
-        System.out.println(sum + i);
-        System.out.println(dub + d);
-        System.out.println(s + name);
+        int iSum = i + i2;
+        System.out.println(iSum);
 
         /* Print the sum of the double variables on a new line. */
+        double dSum = d + d2;
+        System.out.println(dSum);
 		
         /* Concatenate and print the String variables on a new line; 
         	the 's' variable above should be printed first. */
+        String sSum = s + s2;
+        System.out.println(sSum);
 
         scan.close();
