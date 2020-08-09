@@ -12,6 +12,8 @@ import java.util.regex.*;
 
 public class Solution {
 
+    // https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&isFullScreen=false&playlist_slugs%5B%5D%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D%5B%5D=warmup
+
     // https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/
 
     // Complete the sockMerchant function below.
