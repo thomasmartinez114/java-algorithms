@@ -17,10 +17,26 @@ public class Solution {
     // https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/
 
     // Complete the sockMerchant function below.
+
+    /*
+     * The Problem the sockMerchant method accepts 2 arguments; one argument is the
+     * length of second argument which is an array of integers and the second
+     * argument is an array of integers that represent colors of socks. Count the
+     * pairs of socks Return an integer that represents the number of pairs found in
+     * the array
+     */
+
+    /*
+     * Psuedo Code Create a counter which is an integer to represent pairs of socks
+     * Create a hashmap to create key value pairs which will contain the color as
+     * the key and the amount as the number of socks Do not count odd number of
+     * pairs, only evenly matched pairs. Return number of pairs
+     */
+
     static int sockMerchant(int n, int[] ar) {
         int pairs = 0;
 
-        // Create empty hashmap
+        // declared empty hashmap
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 
         // Add ar indexes to the map
