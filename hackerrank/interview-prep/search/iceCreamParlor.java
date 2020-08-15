@@ -27,6 +27,22 @@ public class Solution {
     // Complete the whatFlavors function below.
     static void whatFlavors(int[] cost, int money) {
 
+        // Array to print while testing
+        int[] purchase = new int[] {0, 1};
+
+        // Delcare empty hashmap
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+
+        // Add the indices to the map
+        for (int i = 0; i < cost.length; i++) {
+            if (!map.containsKey(cost[i])) { // if map doesnt have a key then add to spot 1
+                map.put(cost[i], 1);
+            } else {
+                map.put(cost[i], map.get(cost[i]) + 1); // add to map + 1 for value
+            }
+            System.out.println(map);
+        }
+        System.out.println(purchase);
     }
 
     private static final Scanner scanner = new Scanner(System.in);
