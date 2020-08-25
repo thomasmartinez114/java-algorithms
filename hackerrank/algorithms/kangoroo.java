@@ -13,7 +13,7 @@ public class Solution {
         int kang1 = x1 * v1;
         System.out.println(kang1);
     }
-    System.out.println("YES");
+    // System.out.println("YES");
 
     private static final Scanner scanner = new Scanner(System.in);
 
