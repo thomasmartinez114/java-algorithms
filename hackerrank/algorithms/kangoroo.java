@@ -8,6 +8,15 @@ import java.util.regex.*;
 
 public class Solution {
 
+    /*
+     * Problem: Find where both kangaroos are at same location
+     * Kangaroo 1 : (start) x1 = 2, (jump) v1 = 1
+     * Kangaroo 2 : (start) x2 = 1, (jump) v2 = 2
+     * Solution: print YES if on same location, print NO if not
+     *
+     * 0 2 5 3 = x1 v1 x2 v2
+    */
+
     // Complete the kangaroo function below.
     static String kangaroo(int x1, int v1, int x2, int v2) {
         int kang1 = x1 * v1;
