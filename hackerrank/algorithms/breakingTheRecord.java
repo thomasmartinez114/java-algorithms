@@ -1,5 +1,3 @@
-//https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem?h_r=internal-search&isFullScreen=true
-
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -10,38 +8,55 @@ import java.util.regex.*;
 
 public class Solution {
 
-    // Complete the breakingRecords function below.
-    static int[] breakingRecords(int[] scores) {
-        // inputs gamesPlayed
-        // scores in array.
 
-        // return int array of times she broke her highest score and lowest
+    /*
+     * Problem: Find where both kangaroos are at same location
+     * Kangaroo 1 : (start) x1 = 2, (jump) v1 = 1
+     * Kangaroo 2 : (start) x2 = 1, (jump) v2 = 2
+     * Solution: print YES if on same location, print NO if not
+     *
+     * 0 3 4 2 = x1 v1 x2 v2
+     * // int kang1 = (x1 + v1) * [i];
+     * // int kang2 = (x2 + v2) * [i];
+    */
 
-        // System.out.println(scores);
+    // Complete the kangaroo function below.
+    static String kangaroo(int x1, int v1, int x2, int v2) {
 
-        int[] records = new int[] {0, 0};
-       
-        int highestScore = scores[0];
-        int lowestScore = scores[0]; 
-
-        for (int gameScore = 1; gameScore < scores.length; gameScore++) {
-            // System.out.println(scores[gameScore]);
-            int highestCount = 0;
-            int lowestCount = 0;
-
-            if (scores[gameScore] > highestScore) {
-                highestScore = scores[gameScore];
-                //System.out.println("Highest score: " + highestScore);
-                records[0]++;
-            }
-
-            if (scores[gameScore] < lowestScore) {
-                lowestScore = scores[gameScore];
-                //System.out.println("Lowest score: " + lowestScore);
-                records[1]++;
+        String match = "";
+        // Loop through and multiple the addition of the kangaroo jumps
+        for (int jumps = 1; jumps <= 10000; jumps++) {
+            if ( (x1 + v1) * jumps == (x2 + v2) * jumps) {
+                System.out.println("YES");
+            } else {
+                System.out.println("NO");
             }
         }
-         
-        return records;
-
+        return match;
     }
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        String[] x1V1X2V2 = scanner.nextLine().split(" ");
+
+        int x1 = Integer.parseInt(x1V1X2V2[0]);
+
+        int v1 = Integer.parseInt(x1V1X2V2[1]);
+
+        int x2 = Integer.parseInt(x1V1X2V2[2]);
+
+        int v2 = Integer.parseInt(x1V1X2V2[3]);
+
+        String result = kangaroo(x1, v1, x2, v2);
+
+        bufferedWriter.write(result);
+        bufferedWriter.newLine();
+
+        bufferedWriter.close();
+
+        scanner.close();
+    }
+}
