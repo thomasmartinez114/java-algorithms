@@ -23,17 +23,29 @@ public class Solution {
     // Complete the kangaroo function below.
     static String kangaroo(int x1, int v1, int x2, int v2) {
 
-        String match = "";
-        // Loop through and multiple the addition of the kangaroo jumps
-        for (int jumps = 1; jumps <= 10000; jumps++) {
-            if ( (x1 + v1) * jumps == (x2 + v2) * jumps) {
-                System.out.println("YES");
-            } else {
-                System.out.println("NO");
-            }
+        String match = "NO";
+
+        while (x2 > x1) {
+            x1 += v1;
+            x2 += v2;
+
+            if (x1 == x2) {
+                match = "YES";
+                break;
+            } 
         }
-        return match;
+            return match;
     }
+
+        // // Loop through and multiple the addition of the kangaroo jumps
+        // for (int jumps = 1; jumps <= 10000; jumps++) {
+        //     if ( (x1 + v1) * jumps == (x2 + v2) * jumps) {
+        //         System.out.println("YES");
+        //     } else {
+        //         System.out.println("NO");
+        //     }
+        // }
+        // return match;
 
     private static final Scanner scanner = new Scanner(System.in);
 
